@@ -11,7 +11,7 @@
     "lint:style": "stylelint \"**/*.{vue,css}\" --ignore-path .gitignore",
     "lint": "yarn lint:js && yarn lint:style",
     "server:start": "nodemon ./server/app.js"
-***REMOVED***
+  },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
@@ -23,7 +23,7 @@
     "mongoose": "^6.1.2",
     "nodemon": "^2.0.15",
     "nuxt": "^2.15.7"
-***REMOVED***
+  },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
     "@nuxt/types": "^2.15.7",

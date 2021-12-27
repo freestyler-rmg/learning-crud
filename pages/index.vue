@@ -57,18 +57,18 @@ export default Vue.extend({
       input: '',
       list: []
     }
-***REMOVED***
+  },
 
   computed: {
     disable(): boolean {
       return this.input.length === 0;
     }
-***REMOVED***
+  },
 
   created() {
     this.loading = true;
     this.handleRead();
-***REMOVED***
+  },
 
   methods: {
     async handleCreate() {
@@ -82,7 +82,7 @@ export default Vue.extend({
           this.handleRead();
         })
         .catch(error => console.error(error));
-  ***REMOVED***
+    },
 
     async handleRead() {
       await this.$axios
@@ -107,7 +107,7 @@ export default Vue.extend({
           this.loading = false;
         })
         .catch(error => console.error(error));
-  ***REMOVED***
+    },
 
     async handleUpdate(id: string, desc: string) {
       await this.$axios
@@ -119,7 +119,7 @@ export default Vue.extend({
           this.handleRead();
         })
         .catch(error => console.error(error));
-  ***REMOVED***
+    },
 
     async handleDelete(id: string) {
       await this.$axios
@@ -129,10 +129,10 @@ export default Vue.extend({
           this.handleRead();
         })
         .catch(error => console.error(error));
-  ***REMOVED***
+    }
 
   }
-***REMOVED***
+});
 </script>
 
 <style src="./style.scss" lang="scss" scoped />

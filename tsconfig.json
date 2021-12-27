@@ -22,13 +22,13 @@
       "@/*": [
         "./*"
       ]
-  ***REMOVED***
+    },
     "types": [
       "@nuxt/types",
       "@nuxtjs/axios",
       "@types/node"
     ]
-***REMOVED***
+  },
   "exclude": [
     "node_modules",
     ".nuxt",

@@ -10,7 +10,7 @@ router.post('/create', function (req, res) {
     description,
     created: new Date(),
     updated: null,
-  ***REMOVED***
+  });
 
   newItem.save(function (error) {
     if (error) {
@@ -20,10 +20,10 @@ router.post('/create', function (req, res) {
       res.send({
         success: true,
         message: 'New item saved successfully!',
-      ***REMOVED***
+      });
     }
-  ***REMOVED***
-***REMOVED***
+  });
+});
 
 router.get('/read', function (req, res) {
   Item.find({}, function (error, list) {
@@ -33,10 +33,10 @@ router.get('/read', function (req, res) {
     } else {
       res.send({
         list,
-      ***REMOVED***
+      });
     }
-  ***REMOVED***
-***REMOVED***
+  });
+});
 
 router.put('/update/:id', function (req, res) {
   Item.findById(req.params.id, function (error, item) {
@@ -54,19 +54,19 @@ router.put('/update/:id', function (req, res) {
           res.send({
             success: true,
             message: 'Item successfully updated!',
-          ***REMOVED***
+          });
         }
-      ***REMOVED***
+      });
     }
-  ***REMOVED***
-***REMOVED***
+  });
+});
 
 router.delete('/delete/:id', function (req, res) {
   Item.remove(
     {
       _id: req.params.id,
-  ***REMOVED***
-    function (error) {
+  	},
+    function(error) {
       if (error) {
         console.log(error);
         res.send(error);
@@ -74,10 +74,10 @@ router.delete('/delete/:id', function (req, res) {
         res.send({
           success: true,
           message: 'Item successfully deleted!',
-        ***REMOVED***
+        });
       }
     }
   );
-***REMOVED***
+});
 
 module.exports = router;

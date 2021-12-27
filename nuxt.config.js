@@ -9,7 +9,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-***REMOVED***
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
@@ -45,20 +45,20 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
-  ***REMOVED***
-***REMOVED***
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     loaders: {
       sass: {
         implementation: require('sass'),
-    ***REMOVED***
+      },
       scss: {
         implementation: require('sass'),
-    ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+      }
+    }
+  },
 
   server: {
     port: 3096
