@@ -1,0 +1,122 @@
+.main-container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 0;
+  position: relative;
+}
+
+.add-item {
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+}
+
+.no-data {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
+
+.date {
+  font-size: 10px;
+  color: #999;
+}
+
+ul {
+  li {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-right: 80px;
+    list-style-position: outside;
+
+    &:first-child {
+      border-top: 1px solid #ddd;
+    }
+
+    textarea {
+      width: 100%;
+      border: 1px solid #ddd;
+      padding: 3px;
+    }
+
+    p {
+      padding: 3px;
+    }
+
+    .button-container {
+      position: absolute;
+      right: 0;
+      top: 8px;
+      button {
+        border: 1px solid #ddd;
+        width: 32px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.input-container {
+  position: relative;
+  padding-right: 40px;
+
+  input {
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    border: 1px solid #ccc;
+    width: 32px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: default;
+    }
+  }
+}
+
+.checkbox-container {
+  margin-bottom: 24px;
+}
+
+.loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  .inner-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+  }
+  .icon {
+    font-size: 80px;
+    line-height: 1;
+    animation: spinner .7s linear infinite;
+  }
+  p {
+    font-size: 10px;
+    padding-top: 8px;
+  }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
